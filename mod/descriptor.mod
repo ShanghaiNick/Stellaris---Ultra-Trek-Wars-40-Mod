@@ -1,7 +1,7 @@
-version="0.1.0"
+version="0.2.1"
 tags={
 	"Gameplay"
 	"Technologies"
 }
-name="Crossverse"
+name="Starhammer"
 supported_version="v4.5.*"

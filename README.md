@@ -1,9 +1,9 @@
-# Crossverse (working title)
+# Starhammer
 
 A Stellaris mod for one giant crossover galaxy: Star Trek, Star Wars, Warhammer 40,000 and more, each
 with its own technology tree, playing in the same game as the base-game empires.
 
-Built for Stellaris 4.5. Version 0.1.0. **Not yet tested in a running game.**
+Built for Stellaris 4.5. Version 0.2.1. Loads and starts a game with 78 Workshop mods; long play is untested.
 
 ## What it does today
 

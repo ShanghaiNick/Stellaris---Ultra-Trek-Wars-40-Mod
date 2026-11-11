@@ -19,7 +19,18 @@
     "3824491147": "Necron Shipset (4.5 models)",
     "682319439": "Star Trek Emblem Pack",
     "2517135561": "Warhammer 40K: Emblems",
-    "2811907627": "Flags, Emblems and Backgrounds Merged"
+    "2811907627": "Flags, Emblems and Backgrounds Merged",
+    "3512702619": "EVE Online Shipsets - NSC3 Patch",
+    "3495616646": "Necron Shipset - NSC3 Patch",
+    "3486631115": "Star Trek NC - NSC3 Shipset Patch",
+    "3498121027": "Adeptus Mechanicus Shipset - NSC3 Patch",
+    "3496700773": "Angels of Death Shipset - NSC3 Patch",
+    "3497252118": "Chaos Space Marines - NSC3 Patch",
+    "2666936084": "Colored Map Icons Gigastructural Engineering",
+    "3659337937": "Gigastructural Engineering: Unlimited Arc Furnaces",
+    "683230077": "NSC3",
+    "1121692237": "Gigastructural Engineering & More (4.5)",
+    "3432698915": "Star Wars Yuusan Vong Ships 4.5 NSC3 Edition"
   },
   "exclude": {
     "2583755721": "unsubscribed legacy: Star Wars New Dawn 3.14",
@@ -28,22 +39,19 @@
     "898674351": "unsubscribed legacy: Mobile Suit Gundam Ships (2021)",
     "3494780831": "unsubscribed legacy: Gundam Shipset NSC patch",
     "2308296669": "unsubscribed legacy: Star Wars ShipSet 2.1.3",
-    "3512702619": "needs NSC3: EVE Online Shipsets NSC3 Patch",
-    "3495616646": "needs NSC3: Necron Shipset NSC3 Patch",
-    "3486631115": "needs NSC3: Star Trek NC NSC3 Shipset Patch",
-    "3498121027": "needs NSC3: Adeptus Mechanicus NSC3 Patch",
-    "3496700773": "needs NSC3: Angels of Death NSC3 Patch",
-    "3497252118": "needs NSC3: Chaos Space Marines NSC3 Patch",
     "3458820310": "belongs to the Gundam overhaul: MSG Stellaris Ships 4.0",
     "2700296203": "belongs to the Gundam overhauls: SEED OMNI Enforcer Ships",
     "3032491880": "add-on for Star Wars Weapons: Funnel's Additions",
-    "2666936084": "add-on for Gigastructures: Colored Map Icons",
-    "3659337937": "add-on for Gigastructures: Unlimited Arc Furnaces",
     "3788732034": "patch for Ethics and Civics Classic + Gigastructures",
     "3745626302": "gameplay: AI Ambition Selector",
     "3825814979": "gameplay: Dynamic Campaign Calendar",
     "3765481800": "gameplay: Galactic Market Overhaul",
     "1595876588": "gameplay: Universal Resource Patch",
     "2936292863": "replaces models of base-game marauders: left for a later pass"
-  }
+  },
+  "_first": "Loaded before everything else, in this order. Mods with 'patch' or 'NSC3 Edition' in the name load after the rest; Crossverse is always last.",
+  "first": [
+    "1121692237",
+    "683230077"
+  ]
 }

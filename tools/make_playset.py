@@ -86,7 +86,15 @@ def main() -> int:
                 skipped.append((m["name"], f"built for {m['supported_version']}"))
             else:
                 chosen.append(m)
-        chosen.sort(key=lambda m: m["name"].lower())
+        first = rules.get("first", [])
+
+        def order(m: dict):
+            if m["id"] in first:
+                return (0, first.index(m["id"]), "")
+            late = "patch" in m["name"].lower() or "nsc3 edition" in m["name"].lower()
+            return (2 if late else 1, 0, m["name"].lower())
+
+        chosen.sort(key=order)
         print(f"enabled: {len(chosen)} Workshop mods + Crossverse; left out: {len(skipped)}")
         looks: dict[str, list[str]] = {}
         for m in chosen:
