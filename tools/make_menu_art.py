@@ -142,9 +142,28 @@ def sisyphus_mark(width: int = 300) -> Image.Image:
     return out.resize((width, round(crop.height * width / crop.width)), Image.LANCZOS)
 
 
+KEYART = ROOT / "art" / "menu_keyart.png"
+
+
+def keyart_background() -> Image.Image:
+    """Fit art/menu_keyart.png to the menu: scale to cover 2560x1440, centre-crop, darken the menu column a little."""
+    src = Image.open(KEYART).convert("RGB")
+    k = max(W / src.width, H / src.height)
+    big = src.resize((round(src.width * k), round(src.height * k)), Image.LANCZOS)
+    x0, y0 = (big.width - W) // 2, (big.height - H) // 2
+    a = np.asarray(big.crop((x0, y0, x0 + W, y0 + H)), dtype=np.float32) / 255.0
+    xx = np.arange(W, dtype=np.float32)[None, :, None]
+    a *= 0.70 + 0.30 * np.clip((xx - W * 0.02) / (W * 0.22), 0, 1)
+    return Image.fromarray((np.clip(a, 0, 1) * 255).astype(np.uint8), "RGB")
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
-    bg, lg = background(), logo()
+    lg = logo()
+    if KEYART.exists():                # a painted picture wins over the procedural nebula
+        bg = keyart_background()
+    else:
+        bg = background()
     bg.save(OUT / "starhammer_menu_bg.dds", pixel_format="DXT1")
     lg.save(OUT / "game_logo.dds")
     mark = None
