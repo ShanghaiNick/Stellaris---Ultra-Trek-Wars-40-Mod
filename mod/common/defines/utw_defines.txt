@@ -1,4 +1,7 @@
 # Six research options per area instead of the base game's three.
+# Six simulation steps per frame instead of two: measured about 10% more game days per second
+# on a 1000-star game (2026-11-11), no change to the simulation itself.
 NGameplay = {
 	NUM_TECH_ALTERNATIVES = 6
+	NUM_COMMANDS_PER_TURN = 6
 }

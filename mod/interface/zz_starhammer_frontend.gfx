@@ -1,10 +1,12 @@
-# Starhammer main menu: a still image in place of the base game's animated scene.
+# Starhammer main menu background sprite, used by interface/frontend.gui.
 # The logo is replaced by shipping gfx/interface/main/game_logo.dds.
 spriteTypes = {
 	spriteType = {
-		name = "GFX_frontend_animated_bg"
+		name = "GFX_starhammer_menu_bg"
 		texturefile = "gfx/interface/main/starhammer_menu_bg.dds"
-		alwaystransparent = yes
-		transparencecheck = no
+	}
+	spriteType = {
+		name = "GFX_sisyphus_logo"
+		texturefile = "gfx/interface/main/sisyphus_logo.dds"
 	}
 }

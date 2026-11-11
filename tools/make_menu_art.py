@@ -129,16 +129,35 @@ def logo() -> Image.Image:
     return out
 
 
+SISYPHUS_SRC = Path(r"C:\Users\Nicho\Sisyphus\Webpage\images\sisyphus_ai_logo_1000.jpg")
+
+
+def sisyphus_mark(width: int = 300) -> Image.Image:
+    """The Sisyphus AI emblem and wordmark, lifted off its dark plate: brightness becomes transparency."""
+    crop = Image.open(SISYPHUS_SRC).convert("RGB").crop((140, 150, 890, 770))
+    a = np.asarray(crop, dtype=np.float32)
+    alpha = np.clip((a.max(axis=2) - 48) / 70.0, 0, 1)
+    rgb = np.clip(a * 1.25 + 20, 0, 255)
+    out = Image.fromarray(np.dstack([rgb, alpha * 255]).astype(np.uint8), "RGBA")
+    return out.resize((width, round(crop.height * width / crop.width)), Image.LANCZOS)
+
+
 def main() -> int:
     OUT.mkdir(parents=True, exist_ok=True)
     bg, lg = background(), logo()
     bg.save(OUT / "starhammer_menu_bg.dds", pixel_format="DXT1")
     lg.save(OUT / "game_logo.dds")
+    mark = None
+    if SISYPHUS_SRC.exists():          # the source logo lives outside this repository; skip if absent
+        mark = sisyphus_mark()
+        mark.save(OUT / "sisyphus_logo.dds")
     print("wrote", OUT / "starhammer_menu_bg.dds", bg.size, "and", OUT / "game_logo.dds", lg.size)
     if "--preview" in sys.argv:
         (ROOT / "docs").mkdir(exist_ok=True)
         prev = bg.copy()
         prev.paste(lg, (50 - 53 + 53, 50 - 33 + 33), lg)
+        if mark:
+            prev.paste(mark, (W - 50 - mark.width, H - 50 - mark.height), mark)
         prev.resize((1280, 720), Image.LANCZOS).save(ROOT / "docs" / "menu_preview.png")
         print("wrote", ROOT / "docs" / "menu_preview.png")
     return 0
