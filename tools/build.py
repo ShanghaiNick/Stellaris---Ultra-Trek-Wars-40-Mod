@@ -378,6 +378,53 @@ def main() -> int:
     write(MOD / "common" / "scripted_triggers" / f"{GEN}_triggers.txt", "\n".join(trig))
     write(MOD / "common" / "governments" / "civics" / f"{GEN}_origins.txt", "\n".join(orig))
 
+    # --- ready-made empires: a base-game prescripted empire's valid shape with our names, origin and ship look
+    emp_file = ROOT / "data" / "empires.json"
+    n_emp = 0
+    if emp_file.exists():
+        templates = {e.key: e for e in pdx.load_dir(game.path / "prescripted_countries") if e.is_block}
+        drop = ("name", "adjective", "spawn_enabled", "ignore_portrait_duplication", "ship_prefix", "playable",
+                "origin", "initializer", "planet_name", "system_name", "graphical_culture", "flag", "advisor_voice_type")
+        emp = [HEADER]
+        for em in json.loads(emp_file.read_text(encoding="utf-8"))["empires"]:
+            if em["template"] not in templates:
+                print(f"WARN empire {em['key']}: template {em['template']} not in this game; skipped")
+                continue
+            k = f"utw_{em['key']}"
+            txt = remove_entries(strip_comments(templates[em["template"]].text), drop)
+            body = txt[txt.index("{") + 1: txt.rindex("}")]
+            for e in pdx.entries(body):
+                if e.key == "species" and e.is_block:
+                    new = e.text
+                    for fld, lk in (("name", "species_name"), ("plural", "species_plural"), ("adjective", "species_adjective")):
+                        new = re.sub(r'(?<![\w])(' + fld + r'\s*=\s*)"[^"]*"', rf'\1"PRESCRIPTED_{lk}_{k}"', new, count=1)
+                    txt = txt.replace(e.text, new, 1)
+                elif e.key == "ruler" and e.is_block:
+                    new = re.sub(r'(?<![\w])(name\s*=\s*)"[^"]*"', rf'\1"PRESCRIPTED_ruler_name_{k}"', e.text, count=1)
+                    txt = txt.replace(e.text, new, 1)
+                elif e.key == "empire_flag" and e.is_block and em.get("colors"):
+                    c = em["colors"]
+                    new = re.sub(r"colors\s*=\s*\{[^}]*\}", f'colors={{ "{c[0]}" "{c[1]}" "null" "null" }}', e.text, count=1)
+                    txt = txt.replace(e.text, new, 1)
+            origin = f"origin_utw_{em['franchise']}" if em.get("franchise") else "origin_default"
+            head = (f'\n\tname = "EMPIRE_DESIGN_{k}"\n\tadjective = "PRESCRIPTED_adjective_{k}"\n\tspawn_enabled = yes\n'
+                    f'\tignore_portrait_duplication = yes\n\tship_prefix = "PRESCRIPTED_ship_prefix_{k}"\n\torigin = "{origin}"\n'
+                    f'\tplanet_name = "PRESCRIPTED_planet_name_{k}"\n\tsystem_name = "PRESCRIPTED_system_name_{k}"\n'
+                    f'\tgraphical_culture = "{em["ship_look"]}"\n')
+            txt = k + " = {" + head + txt[txt.index("{") + 1:]
+            emp.append(f"# {em['name']} (shape of base-game '{em['template']}', ship look from Workshop mod {em.get('mod', '?')})\n"
+                       + re.sub(r"\n\s*\n+", "\n", txt) + "\n")
+            sp = em["species"]
+            for lk, val in ((f"EMPIRE_DESIGN_{k}", em["name"]), (f"EMPIRE_DESIGN_{k}_desc", em.get("desc", "")),
+                            (f"PRESCRIPTED_adjective_{k}", em["adjective"]), (f"PRESCRIPTED_ship_prefix_{k}", em["prefix"]),
+                            (f"PRESCRIPTED_species_name_{k}", sp[0]), (f"PRESCRIPTED_species_plural_{k}", sp[1]),
+                            (f"PRESCRIPTED_species_adjective_{k}", sp[2]), (f"PRESCRIPTED_planet_name_{k}", em["homeworld"]),
+                            (f"PRESCRIPTED_system_name_{k}", em["system"]), (f"PRESCRIPTED_ruler_name_{k}", em["ruler"])):
+                loc_out.append((lk, val))
+            n_emp += 1
+        write(MOD / "prescripted_countries" / f"{GEN}_empires.txt", "\n".join(emp))
+    summary.append(f"ready-made empires: {n_emp}")
+
     seen, loc_lines = set(), ["l_english:"]
     for k, v in loc_out:
         if k in seen or v is None:

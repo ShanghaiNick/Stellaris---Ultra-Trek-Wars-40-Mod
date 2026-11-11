@@ -14,9 +14,17 @@ utw_is_star_wars = {
 	}
 }
 
+utw_is_warhammer_40k = {
+	OR = {
+		has_origin = origin_utw_warhammer_40k
+		has_country_flag = utw_warhammer_40k
+	}
+}
+
 utw_is_franchise_empire = {
 	OR = {
 		utw_is_star_trek = yes
 		utw_is_star_wars = yes
+		utw_is_warhammer_40k = yes
 	}
 }

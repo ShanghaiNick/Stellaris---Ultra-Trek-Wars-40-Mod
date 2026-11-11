@@ -66,7 +66,7 @@ tech_repeatable_weapon_type_energy_damage = {
 	tier = @repeatableTechTier
 	category = { particles }
 	levels = -1
-	prerequisites = { OR = { "tech_lasers_4" "utw_st_tech_lasers_4" "utw_sw_tech_lasers_4" } }
+	prerequisites = { OR = { "tech_lasers_4" "utw_st_tech_lasers_4" "utw_sw_tech_lasers_4" "utw_wh_tech_lasers_4" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -100,7 +100,7 @@ tech_repeatable_weapon_type_energy_fire_rate = {
 	tier = @repeatableTechTier
 	category = { particles }
 	levels = -1
-	prerequisites = { OR = { "tech_lasers_2" "utw_st_tech_lasers_2" "utw_sw_tech_lasers_2" } }
+	prerequisites = { OR = { "tech_lasers_2" "utw_st_tech_lasers_2" "utw_sw_tech_lasers_2" "utw_wh_tech_lasers_2" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {

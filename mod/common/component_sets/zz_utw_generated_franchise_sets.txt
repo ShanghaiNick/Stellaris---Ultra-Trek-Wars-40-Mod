@@ -671,3 +671,339 @@ component_set = {
 	icon = "GFX_ship_part_laser_4"
 	icon_frame = 1
 }
+
+
+##### Warhammer 40,000 #####
+
+component_set = {
+	key = "UTW_WH_ARC_EMITTER_1"
+
+	icon = "GFX_ship_part_arc_emitter_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_ARC_EMITTER_2"
+
+	icon = "GFX_ship_part_arc_emitter_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_AUTOCANNON_1"
+
+	icon = "GFX_ship_part_autocannon_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_AUTOCANNON_2"
+
+	icon = "GFX_ship_part_autocannon_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_AUTOCANNON_3"
+
+	icon = "GFX_ship_part_autocannon_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_BLUE_LASER"
+
+	icon = "GFX_ship_part_laser_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_DISRUPTOR_1"
+
+	icon = "GFX_ship_part_disruptor_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_DISRUPTOR_2"
+
+	icon = "GFX_ship_part_disruptor_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_DISRUPTOR_3"
+
+	icon = "GFX_ship_part_disruptor_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_ENERGY_LANCE_1"
+
+	icon = "GFX_ship_part_energy_lance_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_ENERGY_LANCE_2"
+
+	icon = "GFX_ship_part_energy_lance_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_ENERGY_TORPEDO_1"
+
+	icon = "GFX_ship_part_energy_torpedo_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_ENERGY_TORPEDO_2"
+
+	icon = "GFX_ship_part_energy_torpedo_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_FLAK_BATTERY_1"
+
+	icon = "GFX_ship_part_flak_batteries_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_FLAK_BATTERY_2"
+
+	icon = "GFX_ship_part_flak_batteries_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_FLAK_BATTERY_3"
+
+	icon = "GFX_ship_part_flak_batteries_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_GAMMA_LASER"
+
+	icon = "GFX_ship_part_laser_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_KINETIC_ARTILLERY_1"
+
+	icon = "GFX_ship_part_kinetic_artillery_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_KINETIC_ARTILLERY_2"
+
+	icon = "GFX_ship_part_kinetic_artillery_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_ACCELERATOR_1"
+
+	icon = "GFX_ship_part_mass_accelerator_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_ACCELERATOR_2"
+
+	icon = "GFX_ship_part_mass_accelerator_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_DRIVER_1"
+
+	icon = "GFX_ship_part_mass_driver_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_DRIVER_2"
+
+	icon = "GFX_ship_part_mass_driver_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_DRIVER_3"
+
+	icon = "GFX_ship_part_mass_driver_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_DRIVER_4"
+
+	icon = "GFX_ship_part_mass_driver_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MASS_DRIVER_5"
+
+	icon = "GFX_ship_part_mass_driver_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MISSILE_1"
+
+	icon = "GFX_ship_part_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MISSILE_2"
+
+	icon = "GFX_ship_part_missile_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MISSILE_3"
+
+	icon = "GFX_ship_part_missile_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MISSILE_4"
+
+	icon = "GFX_ship_part_missile_4"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_MISSILE_5"
+
+	icon = "GFX_ship_part_missile_5"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_PLASMA_1"
+
+	icon = "GFX_ship_part_plasma_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_PLASMA_2"
+
+	icon = "GFX_ship_part_plasma_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_PLASMA_3"
+
+	icon = "GFX_ship_part_plasma_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_POINT_DEFENCE_1"
+	icon = "GFX_ship_part_point_defense_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_POINT_DEFENCE_2"
+	icon = "GFX_ship_part_point_defense_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_POINT_DEFENCE_3"
+	icon = "GFX_ship_part_point_defense_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_RED_LASER"
+
+	icon = "GFX_ship_part_laser_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_STRIKE_CRAFT_HANGAR_1"
+
+	icon = "GFX_ship_part_strike_craft_bomber_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_STRIKE_CRAFT_HANGAR_2"
+
+	icon = "GFX_ship_part_strike_craft_bomber_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_STRIKE_CRAFT_HANGAR_3"
+
+	icon = "GFX_ship_part_strike_craft_bomber_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_SWARMER_MISSILE_1"
+
+	icon = "GFX_ship_part_swarmer_missile_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_SWARMER_MISSILE_2"
+
+	icon = "GFX_ship_part_swarmer_missile_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_TORPEDO_1"
+
+	icon = "GFX_ship_part_torpedo_1"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_TORPEDO_2"
+
+	icon = "GFX_ship_part_torpedo_2"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_TORPEDO_3"
+
+	icon = "GFX_ship_part_torpedo_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_UV_LASER"
+
+	icon = "GFX_ship_part_laser_3"
+	icon_frame = 1
+}
+
+component_set = {
+	key = "UTW_WH_XRAY_LASER"
+
+	icon = "GFX_ship_part_laser_4"
+	icon_frame = 1
+}

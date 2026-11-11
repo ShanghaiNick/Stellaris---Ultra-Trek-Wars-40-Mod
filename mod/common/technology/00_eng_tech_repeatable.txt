@@ -159,7 +159,7 @@ tech_repeatable_weapon_type_explosive_damage = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	levels = -1
-	prerequisites = { OR = { "tech_missiles_3" "utw_st_tech_missiles_3" "utw_sw_tech_missiles_3" "tech_swarmer_missiles_2" "utw_st_tech_swarmer_missiles_2" "utw_sw_tech_swarmer_missiles_2" } }
+	prerequisites = { OR = { "tech_missiles_3" "utw_st_tech_missiles_3" "utw_sw_tech_missiles_3" "utw_wh_tech_missiles_3" "tech_swarmer_missiles_2" "utw_st_tech_swarmer_missiles_2" "utw_sw_tech_swarmer_missiles_2" "utw_wh_tech_swarmer_missiles_2" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -193,7 +193,7 @@ tech_repeatable_weapon_type_explosive_fire_rate = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	levels = -1
-	prerequisites = { OR = { "tech_missiles_3" "utw_st_tech_missiles_3" "utw_sw_tech_missiles_3" "tech_swarmer_missiles_2" "utw_st_tech_swarmer_missiles_2" "utw_sw_tech_swarmer_missiles_2" } }
+	prerequisites = { OR = { "tech_missiles_3" "utw_st_tech_missiles_3" "utw_sw_tech_missiles_3" "utw_wh_tech_missiles_3" "tech_swarmer_missiles_2" "utw_st_tech_swarmer_missiles_2" "utw_sw_tech_swarmer_missiles_2" "utw_wh_tech_swarmer_missiles_2" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -227,7 +227,7 @@ tech_repeatable_weapon_type_kinetic_damage = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	levels = -1
-	prerequisites = { OR = { "tech_mass_drivers_3" "utw_st_tech_mass_drivers_3" "utw_sw_tech_mass_drivers_3" } }
+	prerequisites = { OR = { "tech_mass_drivers_3" "utw_st_tech_mass_drivers_3" "utw_sw_tech_mass_drivers_3" "utw_wh_tech_mass_drivers_3" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -261,7 +261,7 @@ tech_repeatable_weapon_type_kinetic_fire_rate = {
 	tier = @repeatableTechTier
 	category = { propulsion }
 	levels = -1
-	prerequisites = { OR = { "tech_mass_drivers_3" "utw_st_tech_mass_drivers_3" "utw_sw_tech_mass_drivers_3" } }
+	prerequisites = { OR = { "tech_mass_drivers_3" "utw_st_tech_mass_drivers_3" "utw_sw_tech_mass_drivers_3" "utw_wh_tech_mass_drivers_3" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {

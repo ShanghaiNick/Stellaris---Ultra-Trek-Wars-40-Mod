@@ -3,5 +3,6 @@ on_game_start_country = {
 	events = {
 		utw_start.1
 		utw_start.2
+		utw_start.3
 	}
 }

@@ -27,3 +27,17 @@ origin_utw_star_wars = {
 	# random empires do not roll this; prescripted franchise empires use it
 	random_weight = { base = 0 }
 }
+
+origin_utw_warhammer_40k = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/origins_default.dds"
+	picture = GFX_evt_metropolis
+
+	playable = { always = yes }
+	possible = { is_nomadic = no }
+
+	description = "origin_tooltip_utw_warhammer_40k_effects"
+
+	# random empires do not roll this; prescripted franchise empires use it
+	random_weight = { base = 0 }
+}

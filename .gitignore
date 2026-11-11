@@ -3,3 +3,4 @@ __pycache__/
 # machine-specific scan output; regenerate with tools/scan_mods.py
 docs/conflict_map.json
 docs/conflict_map.md
+!docs/playset_crossover.md

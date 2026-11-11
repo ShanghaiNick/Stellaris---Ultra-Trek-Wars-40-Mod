@@ -312,7 +312,7 @@ tech_repeatable_weapon_type_strike_craft_fire_damage = {
 	tier = @repeatableTechTier
 	category = { military_theory }
 	levels = -1
-	prerequisites = { OR = { "tech_strike_craft_3" "utw_st_tech_strike_craft_3" "utw_sw_tech_strike_craft_3" } }
+	prerequisites = { OR = { "tech_strike_craft_3" "utw_st_tech_strike_craft_3" "utw_sw_tech_strike_craft_3" "utw_wh_tech_strike_craft_3" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {
@@ -346,7 +346,7 @@ tech_repeatable_weapon_type_strike_craft_fire_rate = {
 	tier = @repeatableTechTier
 	category = { military_theory }
 	levels = -1
-	prerequisites = { OR = { "tech_strike_craft_3" "utw_st_tech_strike_craft_3" "utw_sw_tech_strike_craft_3" } }
+	prerequisites = { OR = { "tech_strike_craft_3" "utw_st_tech_strike_craft_3" "utw_sw_tech_strike_craft_3" "utw_wh_tech_strike_craft_3" } }
 	weight = @repeatableTechWeight
 
 	weight_modifier = {

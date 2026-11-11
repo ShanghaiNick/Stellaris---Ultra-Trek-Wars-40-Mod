@@ -31,3 +31,18 @@ country_event = {
 		give_technology = { tech = utw_sw_tech_pd_tracking_1 message = no }
 	}
 }
+
+# warhammer_40k: the franchise's own tier-0 weapons, given once at game start
+country_event = {
+	id = utw_start.3
+	hide_window = yes
+	is_triggered_only = yes
+	trigger = { utw_is_warhammer_40k = yes }
+	immediate = {
+		give_technology = { tech = utw_wh_tech_lasers_1 message = no }
+		give_technology = { tech = utw_wh_tech_mass_drivers_1 message = no }
+		give_technology = { tech = utw_wh_tech_missiles_1 message = no }
+		give_technology = { tech = utw_wh_tech_flak_batteries_1 message = no }
+		give_technology = { tech = utw_wh_tech_pd_tracking_1 message = no }
+	}
+}

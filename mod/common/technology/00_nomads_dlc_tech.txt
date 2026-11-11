@@ -734,7 +734,7 @@ tech_dyson_gun = {
     is_rare = yes
     is_reverse_engineerable = no
     weight = @tier3weight3
-    prerequisites = { "tech_wormhole_stabilization" OR = { "tech_lasers_3" "utw_st_tech_lasers_3" "utw_sw_tech_lasers_3" } }
+    prerequisites = { "tech_wormhole_stabilization" OR = { "tech_lasers_3" "utw_st_tech_lasers_3" "utw_sw_tech_lasers_3" "utw_wh_tech_lasers_3" } }
 
     potential = {
         has_nomads_dlc = yes
