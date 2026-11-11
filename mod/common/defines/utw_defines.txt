@@ -1,0 +1,4 @@
+# Six research options per area instead of the base game's three.
+NGameplay = {
+	NUM_TECH_ALTERNATIVES = 6
+}

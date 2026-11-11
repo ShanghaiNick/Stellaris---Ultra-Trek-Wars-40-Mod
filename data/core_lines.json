@@ -1,0 +1,40 @@
+{
+  "_about": "The base game's standard weapon lines. Each franchise gets its own copy of these; base-game copies above tier 0 are hidden from franchise empires. Special weapons (archaeotech, psionic, crisis, colossus, titan, bio-ship) are left alone and stay open to everyone.",
+  "_sets": "Only these component sets are copied. The bio-ship and creature variants of each line stay base-game only.",
+  "sets": [
+    "RED_LASER", "BLUE_LASER", "UV_LASER", "XRAY_LASER", "GAMMA_LASER",
+    "PLASMA_1", "PLASMA_2", "PLASMA_3",
+    "DISRUPTOR_1", "DISRUPTOR_2", "DISRUPTOR_3",
+    "ENERGY_LANCE_1", "ENERGY_LANCE_2",
+    "ARC_EMITTER_1", "ARC_EMITTER_2",
+    "ENERGY_TORPEDO_1", "ENERGY_TORPEDO_2",
+    "MASS_DRIVER_1", "MASS_DRIVER_2", "MASS_DRIVER_3", "MASS_DRIVER_4", "MASS_DRIVER_5",
+    "AUTOCANNON_1", "AUTOCANNON_2", "AUTOCANNON_3",
+    "KINETIC_ARTILLERY_1", "KINETIC_ARTILLERY_2",
+    "MASS_ACCELERATOR_1", "MASS_ACCELERATOR_2",
+    "MISSILE_1", "MISSILE_2", "MISSILE_3", "MISSILE_4", "MISSILE_5",
+    "SWARMER_MISSILE_1", "SWARMER_MISSILE_2",
+    "TORPEDO_1", "TORPEDO_2", "TORPEDO_3",
+    "FLAK_BATTERY_1", "FLAK_BATTERY_2", "FLAK_BATTERY_3",
+    "POINT_DEFENCE_1", "POINT_DEFENCE_2", "POINT_DEFENCE_3",
+    "STRIKE_CRAFT_HANGAR_1", "STRIKE_CRAFT_HANGAR_2", "STRIKE_CRAFT_HANGAR_3"
+  ],
+  "lines": {
+    "lasers":            ["tech_lasers_1", "tech_lasers_2", "tech_lasers_3", "tech_lasers_4", "tech_lasers_5"],
+    "plasma":            ["tech_plasma_1", "tech_plasma_2", "tech_plasma_3"],
+    "disruptors":        ["tech_disruptors_1", "tech_disruptors_2", "tech_disruptors_3"],
+    "energy_lance":      ["tech_energy_lance_1", "tech_energy_lance_2"],
+    "arc_emitter":       ["tech_arc_emitter_1", "tech_arc_emitter_2"],
+    "energy_torpedoes":  ["tech_energy_torpedoes_1", "tech_energy_torpedoes_2"],
+    "mass_drivers":      ["tech_mass_drivers_1", "tech_mass_drivers_2", "tech_mass_drivers_3", "tech_mass_drivers_4", "tech_mass_drivers_5"],
+    "autocannons":       ["tech_autocannons_1", "tech_autocannons_2", "tech_autocannons_3"],
+    "kinetic_artillery": ["tech_kinetic_artillery_1", "tech_kinetic_artillery_2"],
+    "mass_accelerator":  ["tech_mass_accelerator_1", "tech_mass_accelerator_2"],
+    "missiles":          ["tech_missiles_1", "tech_missiles_2", "tech_missiles_3", "tech_missiles_4", "tech_missiles_5"],
+    "swarmer_missiles":  ["tech_swarmer_missiles_1", "tech_swarmer_missiles_2"],
+    "torpedoes":         ["tech_torpedoes_1", "tech_torpedoes_2", "tech_torpedoes_3"],
+    "flak":              ["tech_flak_batteries_1", "tech_flak_batteries_2", "tech_flak_batteries_3"],
+    "point_defence":     ["tech_pd_tracking_1", "tech_pd_tracking_2", "tech_pd_tracking_3"],
+    "strike_craft":      ["tech_strike_craft_1", "tech_strike_craft_2", "tech_strike_craft_3"]
+  }
+}

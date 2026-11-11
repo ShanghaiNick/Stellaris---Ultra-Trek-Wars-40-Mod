@@ -1,0 +1,103 @@
+# Research focus: the player steers what each research area offers.
+#
+# The base game has the same idea (physics_research_policy and its two siblings) but locks it behind the
+# Technological Ascendancy perk and gives it +25% draw chance. These three are open to every empire from the
+# first day and are strong enough to decide the hand: a focused category is drawn at four times its normal
+# weight. They are new policies, so no base-game file is replaced.
+
+@utw_focus_draw_chance = 3.0
+
+utw_physics_focus = {
+	category = research
+	potential = { is_country_type = default }
+
+	option = {
+		name = "utw_focus_physics_none"
+		ai_weight = { factor = 10 }
+	}
+	option = {
+		name = "utw_focus_particles"
+		modifier = { category_particles_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_field_manipulation"
+		modifier = { category_field_manipulation_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_computing"
+		modifier = { category_computing_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+}
+
+utw_society_focus = {
+	category = research
+	potential = { is_country_type = default }
+
+	option = {
+		name = "utw_focus_society_none"
+		ai_weight = { factor = 10 }
+	}
+	option = {
+		name = "utw_focus_biology"
+		modifier = { category_biology_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_military_theory"
+		modifier = { category_military_theory_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_new_worlds"
+		modifier = { category_new_worlds_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_statecraft"
+		modifier = { category_statecraft_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_psionics"
+		modifier = { category_psionics_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_archaeostudies"
+		modifier = { category_archaeostudies_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+}
+
+utw_engineering_focus = {
+	category = research
+	potential = { is_country_type = default }
+
+	option = {
+		name = "utw_focus_engineering_none"
+		ai_weight = { factor = 10 }
+	}
+	option = {
+		name = "utw_focus_propulsion"
+		modifier = { category_propulsion_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_voidcraft"
+		modifier = { category_voidcraft_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_materials"
+		modifier = { category_materials_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+	option = {
+		name = "utw_focus_industry"
+		modifier = { category_industry_draw_chance_mult = @utw_focus_draw_chance }
+		ai_weight = { factor = 0 }
+	}
+}
